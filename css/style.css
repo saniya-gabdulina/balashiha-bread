@@ -1,0 +1,7 @@
+.header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background: url("../img/header-bg.png");
+  padding-top: 30px; }
