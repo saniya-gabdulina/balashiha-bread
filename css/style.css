@@ -1,7 +1,154 @@
+.row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto-Light', sans-serif; }
+  body.fixed {
+    overflow: hidden; }
+
+.section {
+  padding: 50px 0 40px; }
+  .section__title {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 32px;
+    color: #1b1b1b; }
+    .section__title::after {
+      content: "";
+      position: absolute;
+      text-align: center;
+      display: block;
+      left: 0;
+      right: 0;
+      width: 39px;
+      height: 20px;
+      margin: 0 auto;
+      background: url(../img/section_logo.png); }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1030px;
+  padding: 0 15px; }
+
+@font-face {
+  font-family: 'Nokia Sans S60';
+  src: url("NokiaSansS60.woff2") format("woff2"), url("NokiaSansS60.woff") format("woff"), url("NokiaSansS60.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("Roboto-Light.eot");
+  src: url("Roboto-Light.eot?#iefix") format("embedded-opentype"), url("Roboto-Light.svg#Roboto-Light") format("svg"), url("Roboto-Light.ttf") format("truetype"), url("Roboto-Light.woff") format("woff"), url("Roboto-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("Roboto-Regular.eot");
+  src: url("Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular.svg#Roboto-Regular") format("svg"), url("Roboto-Regular.ttf") format("truetype"), url("Roboto-Regular.woff") format("woff"), url("Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoCondensed-Light';
+  src: url("RobotoCondensed-Light.eot");
+  src: url("RobotoCondensed-Light.eot?#iefix") format("embedded-opentype"), url("RobotoCondensed-Light.svg#RobotoCondensed-Light") format("svg"), url("RobotoCondensed-Light.ttf") format("truetype"), url("RobotoCondensed-Light.woff") format("woff"), url("RobotoCondensed-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  src: url("RobotoCondensed-Regular.eot");
+  src: url("RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("RobotoCondensed-Regular.svg#RobotoCondensed-Regular") format("svg"), url("RobotoCondensed-Regular.ttf") format("truetype"), url("RobotoCondensed-Regular.woff") format("woff"), url("RobotoCondensed-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
 .header {
   top: 0;
   left: 0;
-  position: fixed;
   width: 100%;
+  max-height: 90px;
+  height: 100%;
   background: url("../img/header-bg.png");
-  padding-top: 30px; }
+  z-index: 100; }
+  .header .container {
+    display: -webkit-box;
+    display: flex; }
+  .header-contacts {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    text-align: right;
+    width: 50%;
+    right: 0;
+    margin-top: 27px; }
+
+.logo {
+  position: relative;
+  top: 0; }
+  .logo__link {
+    display: -webkit-box;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 0; }
+  .logo-text__wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
+  .logo-text__title {
+    font-size: 25px;
+    font-family: "Nokia - Sans - S 60", sans-serif;
+    font-weight: bold;
+    color: #1b1b1b;
+    text-transform: uppercase; }
+  .logo-text__subtitle {
+    font-size: 11px;
+    color: #f64747; }
+  .logo__wrap {
+    max-width: 119px;
+    width: 100%;
+    margin-right: 20px; }
+
+a {
+  text-decoration: none; }
+
+.hero {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding-top: 100px;
+  box-sizing: border-box; }
+
+.content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin: auto;
+  max-width: 970px;
+  width: 100%;
+  height: 72px; }
+  .content__title {
+    font-size: 46px; }

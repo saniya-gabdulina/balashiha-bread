@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,32 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Балашиха Хлеб</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            <div class="menu">
-                <img src="img/logo.svg" alt="logo" class="logo-image menu__logo-image">
-                <a href= "#" class="logo menu__logo">Балашиха Хлеб </a>
-                <span class="logo-title menu__logo-title">хлебобулочные и кондитерские изделия</span>
-                <div class="contacts menu__contacts">
-                    <a href="8(495) 777-11-00" class="phone contacts__phone">8(495) 777-11-00</a>
-                    <img src="img/phone.svg" alt="phone" class="contacts__image">
-                    <a href="#">Перезвоните мне!</a>
+            <a href="/" class="logo__link">
+                <div class="logo__wrap">
+                    <img src="img/logo.png" alt="logo" class="logo">
                 </div>
+                <div class="logo-text__wrap">
+                    <span href="#" class="logo-text__title">Балашиха Хлеб </span>
+                    <span class="logo-text__subtitle">хлебобулочные и кондитерские изделия</span>
+                </div>
+            </a>
+            <div class="header-contacts">
+                <a href="#" class="header-contacts__phone"><span class="header-contacts__phone--min">8(495)</span>777-11-00</a>                
+                <a href="#" class="header-contacts__callback">Перезвоните мне!</a>
             </div>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
-                <div class="hero__content">
-                    <h1 class="title hero__title">Уникальные коммерческие условия</h1>
-                    <span class="hero__text">по поставкам хлебобулочных и кандитерских изделей от крупнейшего хлебзавода в МО</span>
+                <div class="content">
+                    <h1 class="content__title">Уникальные коммерческие условия</h1>
+                    <span class="content__text">по поставкам хлебобулочных и кандитерских изделей от крупнейшего
+                        хлебзавода в МО</span>
                 </div>
                 <div class="row">
                     <div class="hero-card">
@@ -49,10 +55,12 @@
                                     <input type="text" name="userName" class="input form__input" placeholder="Ваше имя">
                                 </div>
                                 <div class="input-group hero__input-group">
-                                    <input type="text" name="userEmail" class="input form__input" placeholder="Ваш e-mail">
+                                    <input type="text" name="userEmail" class="input form__input"
+                                        placeholder="Ваш e-mail">
                                 </div>
                                 <div class="input-group hero__input-group">
-                                    <input type="text" name="userPhone" class="input form__input" placeholder="Ваш номер телефона">
+                                    <input type="text" name="userPhone" class="input form__input"
+                                        placeholder="Ваш номер телефона">
                                 </div>
                                 <button class="button form__button">Получить КП!</button>
                                 <div class="policy form__policy">
@@ -64,6 +72,161 @@
                 </div>
             </div>
         </section>
+        <!--<section class="hero">-->
+        <section class="photo">
+            <div class="container">
+                <h2 class="section__title">фотографии нашего завода</h2>
+                <div class="row">
+                    <div class="photo-swiper__container"></div>
+                    <p class="photo__text">
+                        Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной продукции.
+ 
+                        Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция, которая давно стала визитной карточкой края.
+                        А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей
+                    <p>
+                </div>
+            </div>
+        </section>
+        <!--<section class="photo">-->
+        <section class="mainadv">
+            <div class="container">
+                <h2 class="section__title">Главные преимущества за 1 минуту</h2>
+                <div class="mainadv__video"></div>
+            </div>
+        </section>
+            <!-- <section class="advantages">-->
+        <section class="ouradv">
+            <div class="container">
+                <h2 class="section__title">Наши преимущества</h2>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="ouradv-card">
+                            <div class="ouradv-card__title"></div>
+                            <div class="ouradv-card__img"></div>
+                            <div class="ouradv-card__text"></div>
+                        </div>
+                        <div class="ouradv-card">
+                            <div class="ouradv-card__title"></div>
+                            <div class="ouradv-card__img"></div>
+                            <div class="ouradv-card__text"></div>
+                        </div>
+                        <div class="ouradv-card">
+                            <div class="ouradv-card__title"></div>
+                            <div class="ouradv-card__img"></div>
+                            <div class="ouradv-card__text"></div>
+                        </div>
+                    </div>
+                    <!-- /.col-50 -->
+                    <div class="col-50">
+                        <div class="ouradv-card">
+                            <div class="ouradv-card__title"></div>
+                            <div class="ouradv-card__img"></div>
+                            <div class="ouradv-card__text"></div>
+                        </div>
+                        <div class="ouradv-card">
+                            <div class="ouradv-card__title"></div>
+                            <div class="ouradv-card__img"></div>
+                            <div class="ouradv-card__text"></div>
+                        </div>
+                        <div class="ouradv-card">
+                            <div class="ouradv-card__title"></div>
+                            <div class="ouradv-card__img"></div>
+                            <div class="ouradv-card__text"></div>
+                        </div>
+                    </div>
+                    <!-- /.col-50 -->
+                </div>
+            </div>
+        </section>
+        <!--section class="ouradv">-->
+        <section class="catalog">
+            <div class="container">
+               <h2 class="section__title">Каталог продукции</h2>
+                   <div class="row">
+                    <div class="col-30">
+                        <div class="catalog-card">
+                            <div class="catalog-card__img"></div>
+                            <div class="catalog-card__title"></div>
+                            <div class="catalog-card__text"></div>
+                            <div class="catalog-card__button"></div>
+                        </div>
+                    </div>
+                    <!-- /.col-30 -->
+                    <div class="col-30">
+                        <div class="catalog-card">
+                            <div class="catalog-card__img"></div>
+                            <div class="catalog-card__title"></div>
+                            <div class="catalog-card__text"></div>
+                            <div class="catalog-card__button"></div>
+                        </div>
+                    </div>
+                    <!-- /.col-30 -->
+                    <div class="col-30">
+                        <div class="catalog-card">
+                            <div class="catalog-card__img"></div>
+                            <div class="catalog-card__title"></div>
+                            <div class="catalog-card__text"></div>
+                            <div class="catalog-card__button"></div>
+                        </div>
+                    </div>
+                    <!-- /.col-30 -->
+                   </div>
+            </div>
+        </section>
+        <!-- /.catalog -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section__title">О "Башашиха Хлеб"</h2>
+                <p class="about__text">
+                    Мы изготавливаем хлеб на ОАО «Балашиха Хлею». Это одно из крупнейших предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной продукции.Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция, которая давно стала визитной карточкой края.
+                    А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей.
+                    На нашем комбинате трудится более 700 человек. Это не просто люди, которые  приходят сюда из-за стабильной зарплаты, это – хлебопеки, которые приходят сюда по зову сердца. А потому наш хлеб не только качественный и вкусный, но ещё и изготавливается с любовью.
+                </p>
+                <div class="about__video"></div>
+                <!-- /.about__video -->
+            </div>
+        </section>
+        <!-- /.about -->
+        <section class="offer">
+            <div class="container">
+                <h2 class="section__title">Получите персональное предложение</h2>
+                <div class="offer-form">
+                    <form action="" class="form offer__form">
+                        <div class="input-group offer__input-group">
+                            <input type="text" name="userName" class="input form__input" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group offer__input-group">
+                            <input type="text" name="userEmail" class="input form__input"
+                                placeholder="Ваш e-mail">
+                        </div>
+                        <div class="input-group offer__input-group">
+                            <input type="text" name="userPhone" class="input form__input"
+                                placeholder="Ваш номер телефона">
+                        </div>
+                        <button class="button form__button">Получить КП!</button>
+                        <div class="policy form__policy">
+                            <label for="policy" class="form__policy">Ваши данные не будут переданны третьим лицам, согласно законам РФ</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+   <footer class="footer">
+       <div class="container">
+           <img src="" alt="" class="footer-img">
+           <div class="map footer__map "></div>
+            <div class="footer__nav">
+                <span class="footer__nav-text">© 1994-2014 «Балашиха Хлеб» ,  ИНН: 7708757552, Адрес: г. Москва, ул. Неверовского, д. 9
+                </span>
+                <div class="footer__nav-item">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+       </div>
+   </footer>
+   <!-- /.footer -->
 </body>
+
 </html>
