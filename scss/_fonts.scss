@@ -1,52 +1,50 @@
 @font-face {
     font-family: 'Nokia Sans S60';
-    src: url('NokiaSansS60.woff2') format('woff2'),
-        url('NokiaSansS60.woff') format('woff'),
-        url('NokiaSansS60.ttf') format('truetype');
+    src: url('../fonts/NokiaSansS60/NokiaSansS60.woff2') format('woff2'),
+        url('../fonts/NokiaSansS60/NokiaSansS60.woff') format('woff'),
+        url('../fonts/NokiaSansS60/NokiaSansS60.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Roboto-Light';
-    src: url('Roboto-Light.eot');
-    src: url('Roboto-Light.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Light.svg#Roboto-Light') format('svg'),
-         url('Roboto-Light.ttf') format('truetype'),
-         url('Roboto-Light.woff') format('woff'),
-         url('Roboto-Light.woff2') format('woff2');
+    src: url('../fonts/Roboto/Roboto/Roboto-Light.eot');
+    src: url('../fonts/Roboto/Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/Roboto/Roboto-Light.svg#Roboto-Light') format('svg'),
+         url('../fonts/Roboto/Roboto/Roboto-Light.ttf') format('truetype'),
+         url('../fonts/Roboto/Roboto/Roboto-Light.woff') format('woff'),
+         url('../fonts/Roboto/Roboto/Roboto-Light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'Roboto-Regular';
-    src: url('Roboto-Regular.eot');
-    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Regular.svg#Roboto-Regular') format('svg'),
-         url('Roboto-Regular.ttf') format('truetype'),
-         url('Roboto-Regular.woff') format('woff'),
-         url('Roboto-Regular.woff2') format('woff2');
+    src: url('../fonts/Roboto/Roboto/Roboto-Regular.eot');
+    src: url('../fonts/Roboto/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/Roboto/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+         url('../fonts/Roboto/Roboto/Roboto-Regular.ttf') format('truetype'),
+         url('../fonts/Roboto/Roboto/Roboto-Regular.woff') format('woff'),
+         url('../fonts/Roboto/Roboto/Roboto-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'RobotoCondensed-Light';
-    src: url('RobotoCondensed-Light.eot');
-    src: url('RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'),
-         url('RobotoCondensed-Light.svg#RobotoCondensed-Light') format('svg'),
-         url('RobotoCondensed-Light.ttf') format('truetype'),
-         url('RobotoCondensed-Light.woff') format('woff'),
-         url('RobotoCondensed-Light.woff2') format('woff2');
+    src: url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Light.eot');
+    src: url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Light.svg#RobotoCondensed-Light') format('svg'),
+         url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Light.woff') format('woff'),
+         url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
     font-family: 'RobotoCondensed-Regular';
-    src: url('RobotoCondensed-Regular.eot');
-    src: url('RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
-         url('RobotoCondensed-Regular.svg#RobotoCondensed-Regular') format('svg'),
-         url('RobotoCondensed-Regular.ttf') format('truetype'),
-         url('RobotoCondensed-Regular.woff') format('woff'),
-         url('RobotoCondensed-Regular.woff2') format('woff2');
+    src: url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Regular.eot');
+    src: url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Regular.svg#RobotoCondensed-Regular') format('svg'),
+         url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Regular.woff') format('woff'),
+         url('../fonts/Roboto/RobotoCondensed/RobotoCondensed-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }

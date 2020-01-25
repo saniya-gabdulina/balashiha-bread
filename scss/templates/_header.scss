@@ -1,5 +1,4 @@
 .header {
-	
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -9,14 +8,42 @@
 	z-index: 100;
 	.container {
 		display: flex;
+		justify-content: space-between;
+		margin-top: -9px;
 	}
 	&-contacts {
 		display: flex;
 		flex-direction: column;
 		text-align: right;
-		width: 50%;
+		width: 158px;
 		right: 0;
-		margin-top: 27px;
+		margin-top: 23px;
+		margin-right: -2px;
+		font-family: "Roboto-Regular", sans-serif;
+		&__phone {
+			font-size: 24px;
+			color: $brown;
+			&--min {
+				font-size: 16px;
+			}
+		}
+		&__callback {
+			position: relative;
+			font-size: 14px;
+			color: $coral;
+			margin-top: 5px;
+			&::before {
+				content: '';
+				position: absolute;
+				display: block;
+				left: 0;
+				right: 0;
+				width: 33px;
+				height: 15px;
+				margin: 0;
+				background: url(../img/phone-icon.png), no-repeat;  
+			}
+		}
 	}
 }
 .logo {
