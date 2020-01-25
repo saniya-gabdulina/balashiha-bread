@@ -6,16 +6,27 @@
     box-sizing: border-box;
     background: $nude url(../img/photo-bg.png) no-repeat;
     background-size: 889px auto;
-    background-position: calc(-14% - -23px) 72%;
+    background-position: calc(50% - 268px) 72%;
     .swiper-container {
-        width: 50%;
+        position: relative;
+        width: 100%;
+        max-width: 566px;
+        margin-left: 0;
     }
     &__content {
-        width: 50%;
-        
+        width: 100%;
+        max-width: 388px;
         font-size: 16px;
         color: $brown;
         font-family: 'Roboto-Regular', sans-serif;
+        margin-top: 25px;
+        line-height: 23px;
+        p {
+            margin-bottom: 26px;
+            &::last-of-type {
+                margin-bottom: 0;
+            }
+        }
     }
     
 }
@@ -25,10 +36,27 @@
         flex-wrap: wrap;
         bottom: -10px;
         max-width: 566px;
+        width: 100%;
+    }
+    &-nav {
+        position: absolute;
+        
+        bottom: 23px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 111px;
+        height: 25px;
+        background-color: rgba(0,0,0, 0.3);
+        z-index: 99;
     }
     &-pagination {
-        
+        top: 2px;
+        margin: 0 auto;
+        right: 0;
+        left: 0 !important;
         &-bullet {
+            margin: 0 3px;
             border-radius: 0;
             background-color: rgba($light,1);
             &-active {
@@ -38,21 +66,24 @@
     }
     &-button {
         &-prev, &-next {
-            bottom: 10px;
-            top: auto;
+            position: absolute;
+            top: 6px;
             // background-size: 7px;
             width: 7px;
             height: 13px;
+            margin: 0;
+            z-index: 100;
             &::after {
                 display: none;
             }
         }
         &-prev {
-            left: 0;
+            left: 7px !important;
             background: url(../img/arrow-prev.png) no-repeat center;
         }
         &-next {
-            right: 0;
+            right: 7px !important;
+            left: auto !important;
             background: url(../img/arrow-next.png) no-repeat center;
         }
     }

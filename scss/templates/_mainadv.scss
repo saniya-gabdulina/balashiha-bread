@@ -1,0 +1,12 @@
+.mainadv {
+    position: relative;
+    display: flex;
+    padding-bottom: 67px;
+    box-sizing: border-box;
+    background: $light url(../img/mainadv-bg.jpg);
+    background-size: 1447px auto;
+    background-position: calc(50% - -23px) 72%;
+    &__video {
+        
+    }
+}
