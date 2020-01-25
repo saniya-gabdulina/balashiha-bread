@@ -1,8 +1,11 @@
 .hero {
     position: relative;
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+    padding-bottom: 67px;
+    // box-sizing: border-box;
+    background: $light url(../img/hero-bg.jpg) no-repeat;
+    background-size: 1447px auto;
+    background-position: calc(50% - -23px) 72%;
 
     .row {
         margin-top: 70px;
@@ -10,10 +13,18 @@
 
     &-card {
         display: flex;
-        align-content: flex-end;
-        margin: auto;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: -4px;
+        margin-left: -10px;
+        text-transform: uppercase;
 
         &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            margin-right: -7px;
             width: 100%;
             max-width: 232px;
             height: 198px;
@@ -22,16 +33,17 @@
         }
 
         &__text {
+            text-align: center;
             font-size: 16px;
             font-weight: bold;
+            color: #272727;
             font-family: 'RobotoCondensed-Regular', sans-serif;
-            width: 141px;
-            height: 49px;
         }
     }
 }
 
 .form {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 301px;
@@ -40,6 +52,22 @@
     color: #fdf1cf;
     background-color: $coral;
     border: 6px solid $nude;
+    z-index: 10;
+
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        background: url(../img/form-shadow.png);
+        width: 350px;
+        // width: 100%;
+        height: 76px;
+        bottom: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        margin: 0 auto;
+        z-index: -1;
+    }
 
     &__dialog {
         text-align: center;
@@ -86,6 +114,7 @@
         background-image: linear-gradient(to top, #03c9a9 0%, #13efcb 100%);
         font-size: 18px;
         color: $light;
+        text-transform: uppercase;
         font-family: "Roboto-Regular", sans-serif;
     }
 

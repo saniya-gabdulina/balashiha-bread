@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Балашиха Хлеб</title>
 </head>
@@ -40,27 +41,26 @@
                             <span class="hero-card__text">Старейший хлебзавод в Москве</span>
                         </div>
                         <div class="hero-card__item">
-                            <span class="hero-card__text">Уникальная система тройного контроля качества</span>
+                            <span class="hero-card__text">Уникальная система тройного контроля</span>
                         </div>
                     </div>
                     <form action="/" class="form">
                         <div class="form__dialog">
                             <h3 class="form__title">Получите персональное <span class="form__title--min">коммерческое предложение</span></h3>
-                                <div class="hero__input-group">
-                                    <input type="text" name="userName" class="input form__input" placeholder="Ваше имя">
-                                </div>
-                                <div class="hero__input-group">
-                                    <input type="text" name="userEmail" class="input form__input"
-                                        placeholder="Ваш e-mail">
-                                </div>
-                                <div class="hero__input-group">
-                                    <input type="text" name="userPhone" class="input form__input"
-                                        placeholder="Ваш номер телефона">
-                                </div>
-                                <button class="form__button">Получить КП!</button>
-                               
-                                <span class="form__policy">Ваши данные не будут переданны третьим лицам, согласно законам РФ</span>
-                                
+                            <div class="hero__input-group">
+                                <input type="text" name="userName" class="input form__input" placeholder="Ваше имя">
+                            </div>
+                            <div class="hero__input-group">
+                                <input type="text" name="userEmail" class="input form__input"
+                                    placeholder="Ваш e-mail">
+                            </div>
+                            <div class="hero__input-group">
+                                <input type="text" name="userPhone" class="input form__input"
+                                    placeholder="Ваш номер телефона">
+                            </div>
+                            <button class="form__button">Получить КП!</button>
+                            
+                            <span class="form__policy">Ваши данные не будут переданны третьим лицам, согласно законам РФ</span>
                         </div>
                     </form>
                 </div>
@@ -69,15 +69,50 @@
         <!--<section class="hero">-->
         <section class="photo">
             <div class="container">
-                <h2 class="section__title">фотографии нашего завода</h2>
+                <h2 class="section__title">Фотографии нашего завода</h2>
                 <div class="row">
-                    <div class="photo-swiper__container"></div>
-                    <p class="photo__text">
-                        Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной продукции.
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__img">
+                                    <img src="../img/photo-bread.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__img">
+                                    <img src="../img/photo-bread.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__img">
+                                    <img src="../img/photo-bread.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__img">
+                                    <img src="../img/photo-bread.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__img">
+                                    <img src="../img/photo-bread.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="photo__content">
+                        <p>Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной продукции.</p>
  
-                        Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция, которая давно стала визитной карточкой края.
-                        А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей
-                    <p>
+                        <p>Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция, которая давно стала визитной карточкой края.
+                        А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -221,6 +256,9 @@
        </div>
    </footer>
    <!-- /.footer -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+   <script src="js/main.js"></script>
 </body>
 
 </html>

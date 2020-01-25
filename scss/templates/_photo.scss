@@ -1,0 +1,62 @@
+.photo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 67px;
+    box-sizing: border-box;
+    background: $nude url(../img/photo-bg.png) no-repeat;
+    background-size: 889px auto;
+    background-position: calc(-14% - -23px) 72%;
+    .swiper-container {
+        width: 50%;
+    }
+    &__content {
+        width: 50%;
+        
+        font-size: 16px;
+        color: $brown;
+        font-family: 'Roboto-Regular', sans-serif;
+    }
+    
+}
+.swiper {
+    &-slide {
+        display: flex;
+        flex-wrap: wrap;
+        bottom: -10px;
+        max-width: 566px;
+    }
+    &-pagination {
+        
+        &-bullet {
+            border-radius: 0;
+            background-color: rgba($light,1);
+            &-active {
+                background-color: $coral;
+            }
+        }
+    }
+    &-button {
+        &-prev, &-next {
+            bottom: 10px;
+            top: auto;
+            // background-size: 7px;
+            width: 7px;
+            height: 13px;
+            &::after {
+                display: none;
+            }
+        }
+        &-prev {
+            left: 0;
+            background: url(../img/arrow-prev.png) no-repeat center;
+        }
+        &-next {
+            right: 0;
+            background: url(../img/arrow-next.png) no-repeat center;
+        }
+    }
+}
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    width: auto;
+}
