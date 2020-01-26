@@ -49,6 +49,7 @@
 .logo {
 	position: relative;
 	top: 0;
+	z-index: 100;
 	&__link {
 		display: flex;
 		text-align: left;

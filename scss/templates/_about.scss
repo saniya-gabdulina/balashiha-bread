@@ -1,0 +1,47 @@
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: $nude;
+    padding-bottom: 67px;
+    background: $nude url(../img/video__bg.png) no-repeat;
+    background-position: calc(50% - -14px) 84%;
+    .row {
+        display: block;
+    }
+    &__text {
+        max-width: 999px;
+        width: 100%;
+        font-family: 'Roboto-Regular', sans-serif;
+        font-size: 15px;
+        p {
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    &__video {
+        position: relative;
+        margin: 0 auto;
+        cursor: pointer;
+        max-width: 419px;
+        width: 100%;
+        
+        &play {
+
+        }
+        &icon {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            width: 30px;
+            height: 60px;
+        }
+        &bg {
+            max-width: 423px;
+            width: 100%;
+        }
+    }
+}
+

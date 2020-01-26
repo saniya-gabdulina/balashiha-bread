@@ -1,0 +1,18 @@
+.footer {
+    height: 162px;
+    background-color: #363636;
+    padding: 38px 0 35px;
+    text-align: center;
+    &__text {
+        font-family: 'Roboto-Light', sans-serif;
+        font-size: 15px;
+        color: #fefefe;
+    }
+    &__social {
+        margin-top: 32px;
+    }
+    &__link {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}

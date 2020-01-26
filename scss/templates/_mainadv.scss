@@ -1,12 +1,33 @@
 .mainadv {
     position: relative;
     display: flex;
-    padding-bottom: 67px;
+    padding-bottom: 65px;
     box-sizing: border-box;
-    background: $light url(../img/mainadv-bg.jpg);
-    background-size: 1447px auto;
-    background-position: calc(50% - -23px) 72%;
+    height: 581px;
+    background: $light url(../img/mainadv-bg.jpg) no-repeat;
+    background-size: 1553px auto;
+    background-position: calc(50% - -55px) -88%;
     &__video {
-        
+        display: block;
+        left: 100px;
+        margin: auto;
+        padding-left: 80px;
+        padding-top: 15px;
+        position: relative;
+        cursor: pointer;
+        max-width: 621px;
+        width: 100%;
+        &icon {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 65%;
+            top: 45%;
+            width: 42px;
+            height: 88px;
+        }
+        &bg {
+            width: 631px;
+            height: 408px;
+        }
     }
 }

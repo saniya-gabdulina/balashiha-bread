@@ -1,11 +1,42 @@
 .hero {
     position: relative;
     display: flex;
-    padding-bottom: 67px;
+    // padding-bottom: 67px;
     box-sizing: border-box;
     background: $light url(../img/hero-bg.jpg) no-repeat;
     background-size: 1447px auto;
     background-position: calc(50% - -23px) 72%;
+
+    &__form {
+        position: relative;
+        margin-bottom: 67px;
+        display: flex;
+        flex-direction: column;
+        width: 301px;
+        height: 367px;
+        margin-top: 20px;
+        color: #fdf1cf;
+        background-color: $coral;
+        border: 6px solid $nude;
+        z-index: 10;
+
+        &::after {
+            position: relative;
+            display: block;
+            content: '';
+            background: url(../img/form-shadow.png);
+            width: 350px;
+            // width: 100%;
+            height: 76px;
+            min-height: 76px;
+            top: -56px;
+            bottom: 0;
+            left: 50%;
+            transform: translatex(-50%);
+            margin: 0 auto;
+            z-index: -1;
+        }
+    }
 
     .row {
         margin-top: 70px;
@@ -15,24 +46,26 @@
         display: flex;
         justify-content: center;
         margin-top: auto;
-        margin-bottom: -4px;
-        margin-left: -10px;
+        margin-bottom: 22px;
+        margin-left: -12px;
         text-transform: uppercase;
 
         &__item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 50px;
+            padding: 0 39px;
             margin-right: -7px;
             width: 100%;
             max-width: 232px;
-            height: 198px;
-            background: url(../img/hero/hero-card.png) no-repeat center center;
+            height: 246px;
+            background: url(../img/card-bg.png) no-repeat center center;
             background-size: contain;
         }
 
         &__text {
+            position: relative;
+            top: -24px;
             text-align: center;
             font-size: 16px;
             font-weight: bold;
@@ -40,116 +73,111 @@
             font-family: 'RobotoCondensed-Regular', sans-serif;
         }
     }
-}
 
-.form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 301px;
-    height: 367px;
-    margin-top: 20px;
-    color: #fdf1cf;
-    background-color: $coral;
-    border: 6px solid $nude;
-    z-index: 10;
+    .form {
 
-    &::after {
-        position: absolute;
-        display: block;
-        content: '';
-        background: url(../img/form-shadow.png);
-        width: 350px;
-        // width: 100%;
-        height: 76px;
-        bottom: 0;
-        left: 50%;
-        transform: translatex(-50%);
-        margin: 0 auto;
-        z-index: -1;
-    }
+        &__dialog {
+            text-align: center;
+            margin: 0 20px;
+        }
 
-    &__dialog {
-        text-align: center;
-        margin: 0 20px;
-    }
+        &__title {
+            width: 100%;
+            min-width: 251px;
+            min-height: 4px;
+            font-size: 21px;
+            font-family: 'RobotoCondensed-Light', sans-serif;
+            text-transform: uppercase;
+            line-height: 22px;
 
-    &__title {
-        width: 100%;
-        min-width: 251px;
-        min-height: 4px;
-        font-size: 21px;
-        font-family: 'RobotoCondensed-Light', sans-serif;
-        text-transform: uppercase;
-        line-height: 22px;
+            &--min {
+                font-size: 18px;
+            }
+        }
 
-        &--min {
+        &__input {
+            position: relative;
+            width: 100%;
+            max-width: 251px;
+            height: 45px;
+            margin-bottom: 6px;
+            padding-left: 15px;
+            border-radius: 6px;
+            border: none;
+            font-size: 14px;
+            font-family: "Roboto-Regular", sans-serif;
+
+            &-img {
+                position: relative;
+                display: block;
+                margin-left: -22px;
+                width: 21px;
+                height: 26px;
+                float: right;
+                margin-top: 10px;
+                left: -10px
+            }
+
+            &::placeholder {
+                color: #2f2f2f;
+            }
+        }
+
+        &__button {
+            width: 100%;
+            max-width: 251px;
+            height: 57px;
+            margin-top: 8px;
+            border-radius: 6px;
+            border: none;
+            background-image: linear-gradient(to top, #03c9a9 0%, #13efcb 100%);
             font-size: 18px;
+            color: $light;
+            text-transform: uppercase;
+            font-family: "Roboto-Regular", sans-serif;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                background: url(../img/button-bg__active.png);
+            }
         }
-    }
 
-    &__input {
-        width: 100%;
-        max-width: 251px;
-        height: 45px;
-        margin-bottom: 6px;
-        padding-left: 15px;
-        border-radius: 6px;
-        border: none;
-        font-size: 14px;
-        font-family: "Roboto-Regular", sans-serif;
-
-        &::placeholder {
-            color: #2f2f2f;
-        }
-    }
-
-    &__button {
-        width: 100%;
-        max-width: 251px;
-        height: 57px;
-        margin-top: 8px;
-        border-radius: 6px;
-        border: none;
-        background-image: linear-gradient(to top, #03c9a9 0%, #13efcb 100%);
-        font-size: 18px;
-        color: $light;
-        text-transform: uppercase;
-        font-family: "Roboto-Regular", sans-serif;
-    }
-
-    &__policy {
-        position: relative;
-        display: block;
-        margin-top: 12px;
-        font-size: 11px;
-        padding: 0 31px;
-        font-weight: 300;
-        color: $light;
-        letter-spacing: -0.2px;
-
-        &::before,
-        &::after {
-            position: absolute;
-            content: '';
+        &__policy {
+            position: relative;
             display: block;
-            width: 22px;
-            height: 24px;
-            background: url(../img/element.png) no-repeat;
-            top: 0;
-            bottom: 0;
-        }
+            margin-top: 12px;
+            font-size: 11px;
+            padding: 0 31px;
+            font-weight: 300;
+            color: $light;
+            letter-spacing: -0.2px;
 
-        &::before {
-            left: 0;
-        }
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 22px;
+                height: 24px;
+                background: url(../img/element.png) no-repeat;
+                top: 0;
+                bottom: 0;
+            }
 
-        &::after {
-            right: 0;
-        }
+            &::before {
+                left: 0;
+            }
 
+            &::after {
+                right: 0;
+            }
+
+        }
     }
 }
+
+
 
 .content {
     display: flex;
