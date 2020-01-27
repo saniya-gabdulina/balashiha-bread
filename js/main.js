@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('.fancybox').fancybox();
+    
     //initialize swiper when document ready
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
@@ -34,5 +36,70 @@ $(document).ready(function () {
         };
     });
 
-    
+    function validateForm(form) {
+        $(form).validate({
+            errorClass: "invalid",
+            rules: {
+                // simple rule, converted to {required:true}
+                userName: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 10
+                },
+                userPhone: {
+                    required: true,
+                    minlength: 17,
+                    maxlength: 17
+                },
+                // compound rule
+                userEmail: {
+                    required: true,
+                    email: true
+                }
+            },
+            errorElement: "span",
+            messages: {
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче 2 букв",
+                    maxlength: "Имя не длиннее 10 букв"
+                },
+                userPhone: "Телефон обязателен",
+                userEmail: {
+                    required: "Обязательно укажите email",
+                    email: "Введите в формате name@domain.com"
+                }
+            },
+            submitHandler: function (form) {
+                $.ajax({
+                    type: "POST",
+                    url: "http://gabdulinasm.ru/balashiha-bread/send.php",
+                    data: $(form).serialize(),
+                    success: function (response) {
+                        $('.modal-thanks').addClass('modal--visible');
+                        $(form)[0].reset();
+                        modal.removeClass('modal--visible');
+                        setTimeout(function () {
+                            $('.modal-thanks').removeClass('modal--visible');
+                        }, 2000); //убирает окно благодарности через 2000мс (2 секунды) 
+                    },
+                    error: function (response) {
+                        $('.modal-error').addClass('modal--visible');
+                        modal.removeClass('modal--visible');
+                        setTimeout(function () {
+                            $('.modal-error').removeClass('modal--visible');
+                        }, 3000); //убирает окно благодарности через 2000мс (2 секунды) 
+                    }
+                });
+            }
+        });
+    }
+    validateForm('.modal__form');
+    validateForm('.hero__form');
+    validateForm('.offer-form');
+
+    // Маска для телефона
+    $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "Ваш номер телефона:" });
+
+
 });

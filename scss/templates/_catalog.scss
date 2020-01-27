@@ -7,8 +7,10 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        width: 292px;
-        height: 339px;
+        width: 100%;
+        max-width: 292px;
+        height: 100%;
+        max-height: 339px;
         margin-bottom: 20px;
         font-family: 'Roboto-Light';
         border: 1px solid $light;

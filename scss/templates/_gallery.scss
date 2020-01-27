@@ -6,10 +6,9 @@
     }
     &__item {
         position: relative;
-        width: 16.6%;
+        width: 16.666666%;
         height: 200px;
         // padding-top: 62.3%;
-        object-fit: cover;
     }
     &__img {
         position: absolute;
@@ -18,6 +17,7 @@
         width: 100%;
         height: 100%;
         filter: grayscale(1);
+        object-fit: cover;
         transition: 0.3s;
         cursor: pointer;
         &:hover {

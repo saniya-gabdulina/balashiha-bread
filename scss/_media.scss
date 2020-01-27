@@ -1,0 +1,300 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px) {
+   .hero {
+        background-size: 100%;
+        &-card {
+            width: 100%;
+            margin-top: 40px;
+            &__text {
+                font-size: 14px;
+            }
+        }
+    }
+    .content {
+        &__title {
+            font-size: 42px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+    .photo {
+        background-size: 70%;
+        &__content {
+            width: 100%;
+            font-size: 14px;
+
+        }
+        .swiper-container {
+            max-width: 466px;
+            width: 100%;
+         
+        }
+    }
+   
+    .mainadv {
+        &__video {
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+    
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .row {
+        // flex-direction: column;
+        align-items: center;
+    }
+    .section {
+        &__title {
+            font-size: 27px;
+        }
+    }
+    .hero {
+        background: none;
+        &-card {
+            margin-top: 67px;
+
+        }
+        &__form {
+            margin: auto;
+            border: none;
+        }
+    }
+    .content {
+        margin-top: 60px;
+    }
+    .photo {
+        background: $nude;
+        text-align: center;
+        .row {
+            flex-direction: column;
+        }
+        .swiper-container {
+            width: 100%;
+            max-width: 566px;
+            margin: auto;
+        }
+        
+    }
+    .mainadv {
+        background: none;
+        &__video {
+            display: block;
+            left: 0;
+            &icon {
+                left: 50%;
+            }
+        }
+    }
+    .ouradv {
+        .row {
+            justify-content: center;
+        }
+        &-card {
+            margin-bottom: 0;
+            &__text {
+                font-size: 16px;
+                p {
+                    font-size: 13px;
+                }
+            }
+            &__img {
+                width: 78px;
+                height: 78px;
+            }
+        }
+       
+    }
+    .catalog {
+        &-card {
+            &__text {
+                font-size: 16px;
+                p {
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+    
+   .col-30 {
+       width: 50%;
+   }
+    .about {
+        display: flex;
+        align-items: center;
+        background: $nude;
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+        &__text {
+            max-width: 700px;
+            text-align: justify;
+       }
+    }
+    .offer {
+        &-form {
+            width: 620px;
+            &__input {
+                &-group {
+                    width: 100%;
+                    max-width: 625px;
+                }
+                &::placeholder {
+                    font-size: 13px;
+                } 
+            }
+        }
+    }
+    .gallery {
+        &__item {
+            width: 25%;
+            height: 120px;
+        }
+    }
+    .map {
+        height: 400px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .hero {
+        &-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .content {
+        &__title {
+            font-size: 29px;
+        }
+        &__text {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    }
+    .mainadv {
+        padding-bottom: 40px;
+        &__video {
+            margin-top: 30px;
+            &icon {
+                // left: 50%;
+            }
+            &bg {
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 28px;
+    }
+    .offer {
+        padding-bottom: 17px;
+        &-form {
+            width: 301px;
+            height: 360px;
+            &__input {
+                margin-bottom: -15px;
+                &-group {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &-img {
+                    margin-left: 25px;
+                    width: 21px;
+                    height: 26px;
+                    margin-top: 10px;
+                    top: -29px;
+                    left: 93px
+                }
+            }
+        }
+    }
+    
+    .map {
+        height: 463px;
+
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .section {
+        &__title {
+            margin-bottom: 30px;
+            font-size: 22px;
+        }
+    }
+    .header {
+        max-height: 140px;
+        display: flex;
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        &-contacts {
+            margin-bottom: 20px;
+            margin-top: -30px;
+            margin-left: 104px;
+        }
+    }
+    .hero {
+        &__form {
+            &::after {
+                display: none;
+            }
+        }
+    }
+   .col-30 {
+       width: 100%;
+   }
+   .about {
+       &__text {
+           font-size: 15px;
+       }
+   }
+   .ouradv {
+       &-card {
+           height: auto;
+          &__text {
+            font-size: 16px;
+            p {
+                font-size: 14px;
+            }
+          }
+       }
+   }
+    .gallery {
+        
+        &__item {
+            width: 50%;
+            height: 90px;
+        }
+    }
+    .footer {
+        padding: 38px 0;
+        &__text {
+            font-size: 12px;
+        }
+    }
+    
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .logo {
+        width: 100%;
+    }
+}

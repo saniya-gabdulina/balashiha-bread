@@ -36,6 +36,7 @@ function serveSass() {
 };
 function buildCSS(done) {
     src([
+        'css/jquery.fancybox.min.css',
         'css/swiper.min.css',
         'css/style.css'
     ])
@@ -53,13 +54,14 @@ function buildCSS(done) {
 }
 function buildJS(done) {
     src([
-        // 'js/jquery-3.4.1.min.js',
+        'js/jquery-3.4.1.min.js',
         // 'js/jquery-migrate-1.4.1.min.js',
-        // 'js/swiper.min.js',
+        'js/swiper.min.js',
+        'js/jquery.fancybox.min.js',
         // 'js/wow.min.js',
-        // 'js/jquery.validate.min.js',
-        // 'js/jquery.mask.min.js',
-        // 'js/main.js'
+        'js/jquery.validate.min.js',
+        'js/jquery.mask.min.js',
+        'js/main.js'
     ])
         .pipe(concat('script.js'))
         .pipe(minify({
@@ -103,5 +105,5 @@ function imagemin(done) {
 
 
 exports.serve = bs;
-exports.build = series(buildCSS, html, php, fonts, imagemin);
+exports.build = series(buildJS,buildCSS, html, php, fonts, imagemin);
 exports.serveSass = serveSass;

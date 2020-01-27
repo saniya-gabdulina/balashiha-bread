@@ -8,6 +8,7 @@ body {
     }
 }
 .section {
+    width: 100%;
     padding: 50px 0 40px;
     &__title {
         position: relative;
@@ -31,6 +32,12 @@ body {
             margin-top: 4px;
             background: url(../img/section_logo.png);  
         }
+        &--light {
+            color: $light;
+            &::after {
+                background: url(../img/section_logo--light.png);
+            }
+        }
     }
 }
 .container {
@@ -39,3 +46,37 @@ body {
     max-width: 1030px;
     padding: 0 15px;
 }
+
+label {
+    &.invalid{
+        color: tomato;
+        display: block;
+        width: 100%;
+    }
+   
+}
+    
+.invalid {
+    color: tomato;
+    width: 100%;
+}
+    
+span.invalid {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    transform: translateY(100%);
+}
+   
+input {
+    &.invalid {
+        border-bottom: 1px solid tomato;
+    }
+    
+}
+
+em.invalid {
+    position: absolute;
+    top: 60px;
+}
+   

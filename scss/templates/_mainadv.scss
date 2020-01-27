@@ -3,7 +3,6 @@
     display: flex;
     padding-bottom: 65px;
     box-sizing: border-box;
-    height: 581px;
     background: $light url(../img/mainadv-bg.jpg) no-repeat;
     background-size: 1553px auto;
     background-position: calc(50% - -55px) -88%;
@@ -11,23 +10,28 @@
         display: block;
         left: 100px;
         margin: auto;
-        padding-left: 80px;
+        // padding-left: 80px;
         padding-top: 15px;
         position: relative;
         cursor: pointer;
         max-width: 621px;
         width: 100%;
+        &play {
+            display: block;
+            margin: 0 auto;
+        }
         &icon {
             position: absolute;
             transform: translate(-50%, -50%);
-            left: 65%;
-            top: 45%;
+            left: 50%;
+            top: 50%;
             width: 42px;
             height: 88px;
         }
         &bg {
-            width: 631px;
-            height: 408px;
+            width: 100%;
+            max-width: 631px;
+            // height: 408px;
         }
     }
 }
