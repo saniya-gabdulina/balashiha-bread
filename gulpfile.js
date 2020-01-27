@@ -36,7 +36,6 @@ function serveSass() {
 };
 function buildCSS(done) {
     src([
-        'css/animate.css',
         'css/swiper.min.css',
         'css/style.css'
     ])
