@@ -62,8 +62,9 @@ label {
 }
     
 span.invalid {
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
+    padding-top: 9px;
     right: 0;
     transform: translateY(100%);
 }

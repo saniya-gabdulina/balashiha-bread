@@ -35,6 +35,57 @@ $(document).ready(function () {
             el.append(script);
         };
     });
+    function validateForm(form) {
+        $(form).validate({
+            errorClass: "invalid",
+            rules: {
+                // simple rule, converted to {required:true}
+                userName: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 10
+                },
+                userPhone: {
+                    required: true,
+                    minlength: 17,
+                    maxlength: 17
+                }
+            },
+            errorElement: "span",
+            messages: {
+                userName: {
+                    required: "Имя обязательно",
+                    minlength: "Имя не короче 2 букв",
+                    maxlength: "Имя не длиннее 10 букв"
+                },
+                userPhone: "Телефон обязателен"
+                }
+            },
+            submitHandler: function (form) {
+                $.ajax({
+                    type: "POST",
+                    url: "http://gabdulinasm.ru/balashiha-bread/send.php",
+                    data: $(form).serialize(),
+                    success: function (response) {
+                        $('.modal-thanks').addClass('modal--visible');
+                        $(form)[0].reset();
+                        $.fancybox.close();
+                        setTimeout(function () {
+                            $('.modal-thanks').removeClass('modal--visible');
+                        }, 2000); //убирает окно благодарности через 2000мс (2 секунды) 
+                    },
+                    error: function (response) {
+                        $('.modal-error').addClass('modal--visible');
+                        $.fancybox.close();
+                        setTimeout(function () {
+                            $('.modal-error').removeClass('modal--visible');
+                        }, 3000); //убирает окно благодарности через 2000мс (2 секунды) 
+                    }
+                });
+            }
+        });
+    }
+    validateForm('.modal__form');
 
     function validateForm(form) {
         $(form).validate({
@@ -78,14 +129,14 @@ $(document).ready(function () {
                     success: function (response) {
                         $('.modal-thanks').addClass('modal--visible');
                         $(form)[0].reset();
-                        modal.removeClass('modal--visible');
+                        $.fancybox.close();
                         setTimeout(function () {
                             $('.modal-thanks').removeClass('modal--visible');
                         }, 2000); //убирает окно благодарности через 2000мс (2 секунды) 
                     },
                     error: function (response) {
                         $('.modal-error').addClass('modal--visible');
-                        modal.removeClass('modal--visible');
+                        $.fancybox.close();
                         setTimeout(function () {
                             $('.modal-error').removeClass('modal--visible');
                         }, 3000); //убирает окно благодарности через 2000мс (2 секунды) 
@@ -94,7 +145,7 @@ $(document).ready(function () {
             }
         });
     }
-    validateForm('.modal__form');
+    
     validateForm('.hero__form');
     validateForm('.offer-form');
 

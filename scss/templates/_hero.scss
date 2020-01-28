@@ -176,16 +176,22 @@
         }
     }
     &.modal {
-        visibility: hidden;
+        background: none;
+        height: 420px;
+        width: 327px;
+        padding: 0;
         &--visible {
-            visibility: visible;
+            display: block;
+            opacity: 1
+        
         }
-       
         .hero__form {
+            padding: 0;
+            // background: none;
             height: 315px;
         }
         // .hero__input-group {
-        //     margin-bottom: 15px;
+        //     margin-bottom: 15px
         // }
         // .form__dialog {
         //     padding-top: 20px;
@@ -193,7 +199,9 @@
     }
 }
 
-
+.hidden {
+    display: none;
+}
 
 .content {
     display: flex;

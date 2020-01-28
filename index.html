@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Балашиха Хлеб</title>
 </head>
 
@@ -449,35 +449,55 @@
             </div>
         </div>
     </footer>
-    <div class="modal hero" id="modal">
-        <form action="/" method="POST" class="hero__form">
-            <div class="form__dialog">
-                <h3 class="form__title">Получите персональное <span class="form__title--min">коммерческое
-                        предложение</span></h3>
-                <div class="hero__input-group">
-                    <input type="text" name="userName" class="input form__input" placeholder="Ваше имя">
-                    <img src="img/name.png" alt="" srcset="" class="form__input-img">
+    <div class="hidden">
+        <div class="modal hero" id="modal">
+            <form action="/" method="POST" class="hero__form">
+                <div class="form__dialog">
+                    <h3 class="form__title">Получите персональное <span class="form__title--min">коммерческое
+                            предложение</span></h3>
+                    <div class="hero__input-group">
+                        <input type="text" name="userName" class="input form__input" placeholder="Ваше имя">
+                        <img src="img/name.png" alt="" srcset="" class="form__input-img">
+                    </div>
+                    <div class="hero__input-group">
+                        <input type="tel" name="userPhone" class="input form__input"
+                            placeholder="Ваш номер телефона">
+                        <img src="img/phone.png" alt="" srcset="" class="form__input-img">
+                    </div>
+                    <button class="form__button">Получить КП!</button>
+    
+                    <span class="form__policy">Ваши данные не будут переданны третьим лицам, согласно законам
+                        РФ</span>
                 </div>
-                <div class="hero__input-group">
-                    <input type="tel" name="userPhone" class="input form__input"
-                        placeholder="Ваш номер телефона">
-                    <img src="img/phone.png" alt="" srcset="" class="form__input-img">
-                </div>
-                <button class="form__button">Получить КП!</button>
-
-                <span class="form__policy">Ваши данные не будут переданны третьим лицам, согласно законам
-                    РФ</span>
+            </form>
+        </div>
+    </div>
+    <div class="modal-thanks">
+        <div class="container">
+            <div class="thanks__content">
+                <h3 class="thanks__title">Спасибо за заявку</h3>
+                <p class="thanks__text">Наш менеджер перезвонит Вам в течении 15 минут</p>
             </div>
-        </form>
+            <!-- /.hero__content -->
+        </div>
+    </div>
+    <div class="modal-error">
+        <div class="container">
+            <div class="thanks__content">
+                <h3 class="thanks__title">Произошла ошибка</h3>
+                <p class="thanks__text">Попробуйте повторить позднее</p>
+            </div>
+            <!-- /.hero__content -->
+        </div>
     </div>
     <!-- /.footer -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- <script src="js/script.min.js"></script> -->
+    <script src="js/main.js"></script> -->
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
