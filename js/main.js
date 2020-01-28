@@ -35,6 +35,7 @@ $(document).ready(function () {
             el.append(script);
         };
     });
+    
     function validateForm(form) {
         $(form).validate({
             errorClass: "invalid",
