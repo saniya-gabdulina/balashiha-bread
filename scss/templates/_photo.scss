@@ -8,6 +8,7 @@
     background-size: 889px auto;
     background-position: calc(50% - 338px) 114%;
     .swiper-container {
+        display: block;
         position: relative;
         width: 100%;
         max-width: 566px;
@@ -32,12 +33,18 @@
 }
 .swiper {
     &-slide {
+        // box-sizing: border-box;
+        position: relative;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         bottom: -10px;
         // max-width: 566px;
         width: 100%;
+        img {
+            width: 100%;
+        }
     }
+    
     &-nav {
         position: absolute;
         

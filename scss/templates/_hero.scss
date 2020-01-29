@@ -8,6 +8,7 @@
     background-position: calc(50% - -23px) 72%;
 
     &__form {
+        order: 2;
         position: relative;
         margin-bottom: 67px;
         display: flex;
@@ -43,6 +44,7 @@
     }
 
     &-card {
+        order: 1;
         display: flex;
         justify-content: center;
         margin-top: auto;
@@ -75,12 +77,12 @@
     }
 
     .form {
-
+        display: flex;
+        
         &__dialog {
             text-align: center;
             margin: 0 20px;
         }
-
         &__title {
             width: 100%;
             min-width: 251px;
@@ -137,6 +139,7 @@
             font-family: "Roboto-Regular", sans-serif;
             cursor: pointer;
             transition: 0.2s;
+           
 
             &:hover {
                 background: url(../img/button-bg__active.png);
@@ -164,15 +167,12 @@
                 top: 0;
                 bottom: 0;
             }
-
             &::before {
                 left: 0;
             }
-
             &::after {
                 right: 0;
             }
-
         }
     }
     &.modal {
@@ -183,26 +183,24 @@
         &--visible {
             display: block;
             opacity: 1
-        
+        }
+        .fancybox-slide--html {
+            color: #ffff;
+            padding: 10px;
+            right: 20px;
+            top: 15px;
         }
         .hero__form {
             padding: 0;
             // background: none;
             height: 315px;
+            
         }
-        // .hero__input-group {
-        //     margin-bottom: 15px
-        // }
-        // .form__dialog {
-        //     padding-top: 20px;
-        // }
-    }
+    }    
 }
-
 .hidden {
     display: none;
 }
-
 .content {
     display: flex;
     flex-direction: column;
@@ -219,7 +217,6 @@
         font-size: 46px;
         color: #7D3803;
     }
-
     &__text {
         margin-top: -25px;
         font-size: 22px;

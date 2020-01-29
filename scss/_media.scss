@@ -1,12 +1,15 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1400px) {
-   .hero {
+    .hero {
         background-size: 100%;
         &-card {
             width: 100%;
             margin-top: 40px;
             &__text {
                 font-size: 14px;
+            }
+            &__item {
+
             }
         }
     }
@@ -47,9 +50,9 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
     .row {
-        // flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
     }
     .section {
@@ -61,9 +64,10 @@
         background: none;
         &-card {
             margin-top: 67px;
-
+            order: 2;
         }
         &__form {
+            order: 1;
             margin: auto;
             border: none;
         }
@@ -143,7 +147,11 @@
     }
     .offer {
         &-form {
-            width: 620px;
+            margin: auto;
+            max-width: 260px;
+            width: 100%;
+            max-height: 350px;
+            height: 100%;
             &__input {
                 &-group {
                     width: 100%;
@@ -154,11 +162,21 @@
                 } 
             }
         }
+        .row {
+            width: 260px;
+        }
     }
     .gallery {
         &__item {
+            // display: none;
             width: 25%;
             height: 120px;
+            &:nth-child(12),
+            &:nth-child(11),
+            &:nth-child(10),
+            &:nth-child(9) {
+                display: none;
+            }
         }
     }
     .map {
@@ -166,13 +184,18 @@
     }
 }
 
+@media only screen and (max-width : 780px) {
+    .hero {
+        &__form {
+            margin-top: 60px;
+        }
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .hero {
         &-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: none;
         }
     }
     .content {
@@ -201,24 +224,32 @@
     .offer {
         padding-bottom: 17px;
         &-form {
-            width: 301px;
-            height: 360px;
+            margin-bottom: 15px;
             &__input {
                 margin-bottom: -15px;
                 &-group {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    margin-top: 0;
                 }
                 &-img {
+                    display: block;
                     margin-left: 25px;
                     width: 21px;
                     height: 26px;
                     margin-top: 10px;
+                    margin-bottom: -15px;
                     top: -29px;
                     left: 93px
                 }
             }
+        }
+        span.invalid {
+            position: absolute;
+            // margin-top: 27px;
+            width: 100%;
+            transform: translate(12px, 20px);
         }
     }
     
@@ -227,16 +258,7 @@
 
     }
 }
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-    .section {
-        &__title {
-            margin-bottom: 30px;
-            font-size: 22px;
-        }
-    }
+@media only screen and (max-width : 540px) {
     .header {
         max-height: 140px;
         display: flex;
@@ -248,6 +270,15 @@
             margin-bottom: 20px;
             margin-top: -30px;
             margin-left: 104px;
+        }
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .section {
+        &__title {
+            margin-bottom: 30px;
+            font-size: 22px;
         }
     }
     .hero {
@@ -265,8 +296,13 @@
            font-size: 15px;
        }
    }
-   .ouradv {
-       &-card {
+   .photo {
+        padding-bottom: 41px;
+
+   }
+    .ouradv {
+        padding-bottom: 41px;
+        &-card {
            height: auto;
           &__text {
             font-size: 16px;
@@ -275,12 +311,18 @@
             }
           }
        }
-   }
+    }
     .gallery {
         
         &__item {
             width: 50%;
             height: 90px;
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8) {
+                display: none;
+            }
         }
     }
     .footer {
@@ -291,10 +333,15 @@
     }
     
 }
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 400px) {
     .logo {
         width: 100%;
     }
+    .hero {
+        padding-bottom: 47px;
+    }
+    .content {
+        margin-top: 25px;
+    }
 }
+

@@ -59,6 +59,9 @@
             }
         }
     }
+    .row {
+        flex-wrap: wrap;
+    }
 }
 .col-30 {
     width: 30%;
